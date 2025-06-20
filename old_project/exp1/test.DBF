@@ -1,0 +1,17 @@
+//******************************BUSMASTER Messages and signals Database ******************************//
+
+[DATABASE_VERSION] 1.3
+
+[PROTOCOL] CAN
+
+[BUSMASTER_VERSION] [3.2.2]
+
+[NUMBER_OF_MESSAGES] 2
+
+[START_MSG] txTest,34,8,1,1,S
+[START_SIGNALS] test,8,1,0,U,255,0,1,0.000000,1.000000,,
+[END_MSG]
+
+[START_MSG] rxTest,17,8,1,1,S
+[START_SIGNALS] rx,8,1,0,U,255,0,1,0.000000,1.000000,,
+[END_MSG]

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsetup title="TestSetup">
+	<description>First Testing Test Setup</description>
+	<header>
+		<info>
+			<category>Module Name</category>
+			<value/>
+		</info>
+		<info>
+			<category>version</category>
+			<value>1.0</value>
+		</info>
+		<info>
+			<category>Engineer Name</category>
+			<value/>
+		</info>
+		<info>
+			<category>Engineer Role</category>
+			<value/>
+		</info>
+		<list_of_database>
+			<database>..\..\Users\SoftwareEngineer#02\Desktop\exp1\test.DBF</database>
+		</list_of_database>
+		<bustype>CAN</bustype>
+		<reportfile>
+			<path>ReportFile.html</path>
+			<format>HTM</format>
+			<timemode>REL</timemode>
+		</reportfile>
+	</header>
+	<list_of_test_cases>
+		<testcase identifier="123" title="send" exp_handler="EXIT">
+			<send>
+				<send_message identifier="34" unit="RAW" channel="1" default="0">
+					<signal name="test">5</signal>
+				</send_message>
+			</send>
+		</testcase>
+		<testcase identifier="123" title="verify" exp_handler="CONTINUE">
+			<verify failure="ERROR">
+				<verify_message identifier="17" unit="RAW" channel="1">
+					<signal name="rx">x == 0</signal>
+				</verify_message>
+			</verify>
+		</testcase>
+		<testcase identifier="000" title="verify error" exp_handler="CONTINUE">
+			<verify failure="ERROR">
+				<verify_message identifier="17" unit="RAW" channel="1">
+					<signal name="rx">x == 10</signal>
+				</verify_message>
+			</verify>
+		</testcase>
+		<testcase identifier="000" title="verify error id" exp_handler="CONTINUE">
+			<verify failure="ERROR">
+				<verify_message identifier="34" unit="RAW" channel="1">
+					<signal name="test">x == 0</signal>
+				</verify_message>
+			</verify>
+		</testcase>
+		<testcase identifier="456" title="verify Respons wait" exp_handler="CONTINUE">
+			<verifyResponse failure="WARNING" waitfor="500">
+				<verify_message identifier="17" unit="RAW" channel="1">
+					<signal name="rx">x == 0</signal>
+				</verify_message>
+			</verifyResponse>
+		</testcase>
+		<testcase identifier="000" title="verify respons erroe" exp_handler="CONTINUE">
+			<verifyResponse failure="ERROR" waitfor="500">
+				<verify_message identifier="34" unit="RAW" channel="1">
+					<signal name="test">x == 0</signal>
+				</verify_message>
+			</verifyResponse>
+		</testcase>
+		<testcase identifier="000" title="verufy respons" exp_handler="CONTINUE">
+			<verifyResponse failure="ERROR" waitfor="500">
+				<verify_message identifier="17" unit="RAW" channel="1">
+					<signal name="rx">x &gt; 0</signal>
+				</verify_message>
+			</verifyResponse>
+		</testcase>
+	</list_of_test_cases>
+</testsetup>

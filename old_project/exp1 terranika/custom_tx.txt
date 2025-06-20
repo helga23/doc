@@ -1,0 +1,4 @@
+tx_customMsg213 ID = 213,  DLC = 5  
+mode:  7 
+target_v: MSB LSB   21 43 
+limit_i: MSB LSB   21 43 

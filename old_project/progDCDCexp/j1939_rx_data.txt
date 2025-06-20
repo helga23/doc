@@ -1,0 +1,7 @@
+tx_j1939MsgVc: f11406 8  
+out_actual_v: MSB LSB  0 0 
+out_actual_c: MSB LSB  0 0 
+tx_j1939MsgOc: f11305 8  
+out_actual_mode:   0 
+tx_j1939MsgDM1: fbda0f 8  
+out_failt_code:   0 0 0 

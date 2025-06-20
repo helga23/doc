@@ -1,0 +1,3 @@
+rx_customMsg232 ID = 232 , DLC = 5 
+actual_v:  MSB LSB 0 0 
+actual_i: MSB LSB 0 0 

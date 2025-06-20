@@ -1,0 +1,3 @@
+custom_DCDC.in_mode: 11 1 0 
+custom_DCDC.in_target_v: 22 2 22 22 
+custom_DCDC.in_limit_i: 33 2 88 88 

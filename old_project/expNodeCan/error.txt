@@ -1,0 +1,3 @@
+process_begin: CreateProcess(NULL, mingw32-g++ -Wall -c "-IC:\Program Files (x86)\BUSMASTER_v3.2.2\SimulatedSystems\Include" C:/Users/SOFTWA~1/Desktop/TERRAN~1/EXPNOD~1/expnoda.cpp -o expnoda.o, ...) failed.
+make (e=2): Не удается найти указанный файл.
+mingw32-make: *** [C:\Users\SOFTWA~1\Desktop\TERRAN~1\EXPNOD~1\EXPNOD~1:22: expnoda.o] Error 2
